@@ -5,6 +5,7 @@
     "type": "network access control",
     "main_module": "bluecoat_connector.py",
     "app_version": "1.1.5",
+    "python_version": "3",
     "product_vendor": "Blue Coat Systems, Inc.",
     "product_name": "Blue Coat",
     "product_version_regex": ".*",
@@ -340,37 +341,5 @@
             ]
         }
     ],
-    "utctime_updated": "2022-01-07T21:18:55.000000Z",
-    "pip_dependencies": {
-        "wheel": [
-            {
-                "module": "Django",
-                "input_file": "wheels/Django-1.11.29-py2.py3-none-any.whl"
-            },
-            {
-                "module": "certifi",
-                "input_file": "wheels/certifi-2021.10.8-py2.py3-none-any.whl"
-            },
-            {
-                "module": "chardet",
-                "input_file": "wheels/chardet-3.0.4-py2.py3-none-any.whl"
-            },
-            {
-                "module": "idna",
-                "input_file": "wheels/idna-2.10-py2.py3-none-any.whl"
-            },
-            {
-                "module": "pytz",
-                "input_file": "wheels/pytz-2021.3-py2.py3-none-any.whl"
-            },
-            {
-                "module": "requests",
-                "input_file": "wheels/requests-2.25.0-py2.py3-none-any.whl"
-            },
-            {
-                "module": "urllib3",
-                "input_file": "wheels/urllib3-1.26.7-py2.py3-none-any.whl"
-            }
-        ]
-    }
+    "utctime_updated": "2022-01-07T21:18:55.000000Z"
 }
