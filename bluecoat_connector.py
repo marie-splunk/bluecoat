@@ -9,7 +9,7 @@ from django.http import HttpResponse
 import json
 import os
 import requests
-from urlparse import urlparse
+from urllib.parse import urlparse
 
 
 def handle_request(request, path_parts):
@@ -214,14 +214,14 @@ if __name__ == '__main__':
     import sys
 
     if len(sys.argv) < 2:
-        print 'No test json specified as input'
+        print('No test json specified as input')
         exit(0)
     with open(sys.argv[1]) as my_f:
         in_json = my_f.read()
         in_json = json.loads(in_json)
-        print json.dumps(in_json, indent=4)
+        print(json.dumps(in_json, indent=4))
         connector = BlueCoatConnector()
         connector.print_progress_message = True
         my_ret_val = connector._handle_action(json.dumps(in_json), None)
-        print json.dumps(json.loads(my_ret_val), indent=4)
+        print(json.dumps(json.loads(my_ret_val), indent=4))
     exit(0)
